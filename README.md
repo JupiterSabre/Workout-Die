@@ -1,6 +1,6 @@
 #PHASE 1 PROJECT -- HIIT DIE
 
-Existing is hard. Being a domesticated mammalian animal during late stage capitalism is hard. And yet, our meat sack won't take care of themselves! Fear not, we've put together a High Intensity Interval Training tool to help you get those reps in in the privacy of your cubicle, on the subway, or mid-lecture while you try and parse out what the hell a react component is.
+Existing is hard. Being a domesticated mammalian animal during late stage capitalism is hard. And yet, our meat sack won't take care of itself! Fear not, we've put together a High Intensity Interval Training tool to help you get those reps in in the privacy of your cubicle, on the subway, or mid-lecture while you try and parse out what the hell a react component is.
 
 Save your workout circuit, keep your favorites, show off to your friends.
 
