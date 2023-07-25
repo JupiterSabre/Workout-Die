@@ -1,4 +1,4 @@
-#logo {
+/* #logo {
   position: relative;
   left: 50%;
     margin-top: 20px;
@@ -14,7 +14,7 @@ h2 {
 #logo {
   width: 200px; 
   height: 190px; 
-}
+} */
 
 .spin-animation {
   animation: spin 3s linear;
@@ -28,3 +28,126 @@ h2 {
     transform: rotate(360deg);
   }
 }
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+h1 {
+  text-align: center;
+  font-size: 48px;
+  margin: 20px 0;
+  color: #333;
+  font-family: monospace;
+}
+
+#svg-container {
+  text-align: center;
+  margin-top: 30px;
+}
+
+#logo {
+  width: 200px;
+  height: 190px;
+  cursor: pointer;
+}
+
+#work-out-desc {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2#work-out-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+p{
+  text-align: center;
+}
+#current-circuit-container {
+  margin-top: 20px;
+}
+
+#current-circuit {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#current-circuit li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#current-circuit img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+button {
+  cursor: pointer;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:active {
+  background-color: #3e8e41;
+}
+
+#circuit-history {
+  margin-top: 30px;
+}
+
+#circuit-history ul {
+  list-style: none;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+}
+
+#circuit-history li {
+  margin-bottom: 5px;
+}
+
+.Motivational {
+  display: block;
+  max-width: 100%;
+  margin-top: 20px;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url(file:///Users/ronil/Downloads/Polygon_Luminary.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Rest of your existing CSS code */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  /* background: linear-gradient(135deg, #b54200, #3e8e41); */
+}
+
+/* Rest of your existing CSS code */
