@@ -10,9 +10,9 @@
     },
     {
       "id": 2,
-      "workout": "10 BURPEES",
-      "workout_focus": "Upper Body, Lower Body, Core",
-      "image": "src/burpee_GIF.gif",
+      "workout": "BURPEES",
+      "workout_focus": "Lower Body, Upper Body, Core",
+      "img": "src/BURPEE_gif.gif",
       "timer_on": false,
       "time_duration": ""
     },
@@ -28,7 +28,7 @@
       "id": 4,
       "workout": "WATER BREAK (30 SECONDS)",
       "workout_focus": "Hydrate!",
-      "img": "hsrc/hydration_gif.gif",
+      "img": "src/hydration_gif.gif",
       "timer_on": true,
       "time_duration": 3000
     },
@@ -65,7 +65,7 @@
       "time_duration": ""
     },
     {
-      "id": 7,
+      "id": 9,
       "workout": "PLANK (30 SECONDS)",
       "workout_focus": "Upper Body",
       "img": "src/plank_GIF.gif",
@@ -73,10 +73,26 @@
       "time_duration": 300
     },
     {
-      "id": 8,
+      "id": 10,
       "workout": "35 JUMPING JACKS",
       "workout_focus": "Upper Body, Lower Body, Cardio",
       "img": "src/jumping_jack_GIF.gif",
+      "timer_on": false,
+      "time_duration": ""
+    },
+    {
+      "id": 11,
+      "workout": "25 LUNGES",
+      "workout_focus": "Lower Body",
+      "img": "src/lunge_GIF.gif",
+      "timer_on": false,
+      "time_duration": ""
+    },
+    {
+      "id": 12,
+      "workout": "45 BRIDGES",
+      "workout_focus": "Lower Body, Core",
+      "img": "src/bridges_GIF.gif",
       "timer_on": false,
       "time_duration": ""
     }

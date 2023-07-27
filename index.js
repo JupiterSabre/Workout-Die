@@ -1,11 +1,4 @@
-
-/* TO DO!!!!!!!!!!! 
-FORMAT EMAIL BODY
-CHANGE CIRCUIT CARD HIGHLIGHTS COLOR
-UPDATE DB.JSON IMAGES
- */
-
-
+/* hi welcome to our workout die. :3 */
 
 
     // EVENT LISTENER HOOKS UP ROLL DIE UP WITH GENERATOR
@@ -16,7 +9,7 @@ UPDATE DB.JSON IMAGES
     setTimeout(() => {
       logo.classList.remove("spin-animation");
     }, 3000);
-        
+    
     // GRABS WORKOUT DATABASE AND GENERATES A RANDOM WORKOUT PROPERTY FROM THE ARRAY
     fetch("http://localhost:3000/workouts")
     .then(res => res.json())
@@ -25,6 +18,7 @@ UPDATE DB.JSON IMAGES
         if (!Array.isArray(workOuts) || workOuts.length === 0) {
             return null;
         }
+
     // RENDER WORKOUT NAME AND IMAGE        
         const randomIndex = Math.floor(Math.random() * workOuts.length);
         const generatedWorkOut = workOuts[randomIndex];
@@ -41,15 +35,15 @@ UPDATE DB.JSON IMAGES
         imgSpan.append(workoutImg)
         newP.append(imgSpan)
 
-    // SET TIMEOUT TO MAKE CURRENT GIF DISPLAYED EXPIRE, MAKE SURE THE TIMEOUT IS SET TO 3000 BY DEFAULT WHEN PRESENTING
+    // SET TIMEOUT TO MAKE CURRENT GIF DISPLAYED EXPIRE, CHANGE TIMEOUT TO 2000 MS WHEN DEMO-ING
         setTimeout(() => {
             workoutImg.remove();
-        }, 2000); 
+        }, 2000);    
+      }})
 
-        }})
     
-    
-    
+      
+      
     // CLEARS CURRENT CIRCUIT BUTTON
     const circuitList = document.body.querySelector(`#current-circuit`)
     const clearButton = document.body.querySelector(`#clear-circuit`)
@@ -66,14 +60,18 @@ UPDATE DB.JSON IMAGES
         console.log(`i am archived!`)
         const circuitHistory = document.querySelector(`#circuit-history`)
         const allWorkouts = document.querySelectorAll(`#current-circuit .current`)
+      
         
-    // LOOP THROUGH EACH ELEMENT IN NODE LIST AND APPEND TO CIRCUIT HISTORY
+
+    // CREATE & FORMAT DISPLAY CARD FOR COMPLETED CIRCUIT, INCLUDING TIMESTAMP
         const archiveDiv = document.createElement(`div`)
         archiveDiv.setAttribute(`class`, `card` )
         archiveDiv.style.borderStyle = `outset`
         archiveDiv.prepend(getTimestamp())
 
-        //FUNCTIONALITY FOR DELETING CARDS
+
+
+    //FUNCTIONALITY FOR DELETING CARDS
         const deleteButton = document.createElement(`button`)
         deleteButton.setAttribute(`class`, `rmv-button card-button`)
         deleteButton.textContent = `remove`    
@@ -84,7 +82,9 @@ UPDATE DB.JSON IMAGES
             archiveDiv.remove()
         })
 
-    // FUNCTIONALITY FOR EMAIL BUTTON IN ARCHIVE DIV CARD
+
+
+    // FUNCTIONALITY FOR EMAIL BUTTON FOR EACH COMPLETED CIRCUIT CARD
         const emailBtn = document.createElement(`button`)
         emailBtn.textContent = `email circuit`
         emailBtn.setAttribute(`class`, `email-btn card-button`)
@@ -100,7 +100,6 @@ UPDATE DB.JSON IMAGES
         archiveDiv.addEventListener(`mouseover`, () => {
             archiveDiv.style.backgroundColor = `rgb(195, 40, 80, .20)`
         })
-
         archiveDiv.addEventListener(`mouseout`, () => {
             archiveDiv.style.backgroundColor = `white`
         })   
@@ -120,6 +119,7 @@ UPDATE DB.JSON IMAGES
     })
 
 
+
     // CONFIGURE TIMESTAMP AND CALL BACK IN ARCHIVE DIV AND ARCHIVE BUTTON
     function getTimestamp() {
         const now = new Date();
@@ -133,6 +133,9 @@ UPDATE DB.JSON IMAGES
         const timestamp = `${month}/${day}/${year} ${hours}:${minutes} ${amOrPm}`;
         return timestamp;
       }
+
+
+
     // CALL FUNCTION TO GET TIME STAMP
         const timestamp = getTimestamp();
     
