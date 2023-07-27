@@ -37,13 +37,15 @@ UPDATE DB.JSON IMAGES
         newP.setAttribute(`class`, `current`)
         circuitList.appendChild(newP)
         const imgSpan = document.createElement(`span`)
+        // imgSpan.setAttribute(`id`, `span`)
         imgSpan.append(workoutImg)
         newP.append(imgSpan)
 
     // SET TIMEOUT TO MAKE CURRENT GIF DISPLAYED EXPIRE, MAKE SURE THE TIMEOUT IS SET TO 3000 BY DEFAULT WHEN PRESENTING
         setTimeout(() => {
             workoutImg.remove();
-        }, 2000);  
+        }, 2000); 
+
         }})
     
     
@@ -64,14 +66,16 @@ UPDATE DB.JSON IMAGES
         console.log(`i am archived!`)
         const circuitHistory = document.querySelector(`#circuit-history`)
         const allWorkouts = document.querySelectorAll(`#current-circuit .current`)
+        
     // LOOP THROUGH EACH ELEMENT IN NODE LIST AND APPEND TO CIRCUIT HISTORY
         const archiveDiv = document.createElement(`div`)
         archiveDiv.setAttribute(`class`, `card` )
         archiveDiv.style.borderStyle = `outset`
         archiveDiv.prepend(getTimestamp())
+
         //FUNCTIONALITY FOR DELETING CARDS
         const deleteButton = document.createElement(`button`)
-        deleteButton.setAttribute(`class`, `rmv-button`)
+        deleteButton.setAttribute(`class`, `rmv-button card-button`)
         deleteButton.textContent = `remove`    
         archiveDiv.appendChild(deleteButton)
         console.log(deleteButton)
@@ -83,6 +87,7 @@ UPDATE DB.JSON IMAGES
     // FUNCTIONALITY FOR EMAIL BUTTON IN ARCHIVE DIV CARD
         const emailBtn = document.createElement(`button`)
         emailBtn.textContent = `email circuit`
+        emailBtn.setAttribute(`class`, `email-btn card-button`)
         emailBtn.addEventListener(`click`, () => {
             console.log(`EMAILLLL`)
             window.location.href="mailto:mail@example.com?subject=My Circuit"+"&body="+oneCircuit.textContent
@@ -93,7 +98,7 @@ UPDATE DB.JSON IMAGES
         
    // FUNCTIONALITY FOR FOCUSING AN ARCHIVE DIV WITH A HIGHLIGHTED BACKGROUND
         archiveDiv.addEventListener(`mouseover`, () => {
-            archiveDiv.style.backgroundColor = `#ffffcc`
+            archiveDiv.style.backgroundColor = `rgb(195, 40, 80, .20)`
         })
 
         archiveDiv.addEventListener(`mouseout`, () => {
@@ -104,6 +109,7 @@ UPDATE DB.JSON IMAGES
 
     // FUNCTIONALITY FOR APPENDING WORKOUT CIRCUIT INTO ITS OWM DIV CARD
         const oneCircuit = document.createElement(`ul`)
+        oneCircuit.setAttribute(`class`, `saved-list`)
         allWorkouts.forEach(workout => {
             console.log(workout)
             archiveDiv.appendChild(oneCircuit)
