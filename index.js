@@ -1,6 +1,6 @@
-fetch("http://localhost:3000/workouts")
-.then(res => res.json())
-.then(workOuts => console.log(workOuts))
+// fetch("http://localhost:3000/workouts")
+// .then(res => res.json())
+// .then(workOuts => console.log(workOuts))
 
 
 
