@@ -11,8 +11,3 @@ Save your workout circuit, keep your favorites, show off to your friends, stay h
 3. Archive a circuit by clicking archive.
 4. Remove an archived card by double clicking the remove button.
 5. Email your circuit by clicking email. This will open your mail client with the circuit listed. Make sure to replace placeholder email to who you are sending.
-
-
-
-
-

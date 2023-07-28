@@ -68,33 +68,33 @@
       "id": 9,
       "workout": "PLANK (30 SECONDS)",
       "workout_focus": "Upper Body",
-      "img": "src/plank_GIF.gif",
+      "img": "src/Star_Crunch_GIF.gif",
       "timer_on": true,
       "time_duration": 300
     },
     {
       "id": 10,
-      "workout": "35 JUMPING JACKS",
+      "workout": "35 SECOND WALL SIT",
       "workout_focus": "Upper Body, Lower Body, Cardio",
-      "img": "src/jumping_jack_GIF.gif",
+      "img": "src/wall_sit_GIF.gif",
       "timer_on": false,
       "time_duration": ""
     },
     {
       "id": 11,
-      "workout": "25 LUNGES",
-      "workout_focus": "Lower Body",
+      "workout": "30 LUNGES",
+      "workout_focus": "Upper Body, Lower Body, Cardio",
       "img": "src/lunge_GIF.gif",
       "timer_on": false,
       "time_duration": ""
     },
     {
       "id": 12,
-      "workout": "45 BRIDGES",
-      "workout_focus": "Lower Body, Core",
+      "workout": "50 BRIDGES",
+      "workout_focus": "Upper Body, Lower Body, Cardio",
       "img": "src/bridges_GIF.gif",
       "timer_on": false,
       "time_duration": ""
-    }
+    },
   ]
 }
