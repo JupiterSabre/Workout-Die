@@ -95,6 +95,22 @@
       "img": "src/bridges_GIF.gif",
       "timer_on": false,
       "time_duration": ""
+    },
+    {
+      "id": 11,
+      "workout": "30 LUNGES",
+      "workout_focus": "Upper Body, Lower Body, Cardio",
+      "img": "src/lunge_GIF.gif",
+      "timer_on": false,
+      "time_duration": ""
+    },
+    {
+      "id": 12,
+      "workout": "50 BRIDGES",
+      "workout_focus": "Upper Body, Lower Body, Cardio",
+      "img": "src/bridges_GIF.gif",
+      "timer_on": false,
+      "time_duration": ""
     }
   ]
 }

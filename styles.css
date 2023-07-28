@@ -11,10 +11,9 @@
   }
 }
 
-
 h1 {
   text-align: center;
-  font-size: 48px;
+  font-size: 6rem;
   margin: 20px 0;
   color: #333;
   font-family: 'Courier New', Courier, monospace;
@@ -22,27 +21,42 @@ h1 {
 
 #svg-container {
   text-align: center;
+  /* margin-top: 30px; */
 }
 
 #logo {
-  width: 200px;
-  height: 190px;
+  width: 300px;
+  height: 290px;
   cursor: pointer;
 }
 
+#logo:hover {
+  transform: scale(1.1);
+}
+
 #work-out-desc {
-  max-width: 600px;
-  margin: 0 auto;
-  background-color: rgba(255, 255, 255, 0.7);
-  border-radius: 50px;
+  max-width: 650px;
+  margin: 5% auto;
+  background-color: rgba(255, 255, 255, 0.7); 
+  border-radius: 10px;
   padding: 20px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
 }
 
+#quote {
+  max-width: 75%;
+  margin: 5% auto;
+  background-color: rgba(255, 255, 255, 0.7); 
+  border-radius: 10px;
+  border-radius: 15%;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+
+}
+
 h2#work-out-title {
   text-align: center;
-  font-size: 24px;
-  margin-bottom: 10px;
+  font-size: 4rem;
+  margin-bottom: 5px;
   font-family: 'Courier New', Courier, monospace;
 }
 p{
@@ -50,7 +64,9 @@ p{
   font-family: 'Courier New', Courier, monospace;
   font-size: 16px;
 }
+
 #current-circuit-container {
+  display: flexbox;
   margin-top: 20px;
 }
 
@@ -63,16 +79,37 @@ p{
 #current-circuit li {
   display: flex;
   align-items: center;
+  font-size: 150%;
   margin-bottom: 10px;
 }
 
 #current-circuit img {
   height: 50px;
   margin-right: 10px;
+  margin-left: 85px;
+}
+
+#save-clear-btn-span {
+  margin-left: 17%;
+  margin-right: 15%;
 }
 
 
+.rmv-button  {
+  margin-left: 30%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.email-btn {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+
+
 button {
+  font-family: 'Courier New', Courier, monospace;
   padding: 1.1em 2em;
   background: none;
   border: 2px solid #fff;
@@ -83,10 +120,9 @@ button {
   overflow: hidden;
   transition: all 0.3s;
   border-radius: 12px;
-  background-color: #d67d7d;
+  background-color: rgba(252, 172, 193, .4);
   font-weight: bolder;
   box-shadow: 0 2px 0 2px #000;
-  
 }
 
 button:before {
@@ -101,9 +137,9 @@ button:before {
 }
 
 button:hover {
-  background-color: #3bf707;
+  background-color: rgba(0, 139, 139, .6);
   color: #fff;
-  box-shadow: 0 2px 0 2px #0d3b66;
+  box-shadow: 0 2px 0 2px rgba(13, 59, 102, .6);
 }
 
 button:hover::before {
@@ -124,8 +160,8 @@ button:active {
   list-style: none;
   padding: 10px;
   margin: 10px 0;
-  background-color: #e0e0e0;
-  border-radius: 5px;
+  background-color: rgba(224, 224, 224, .6);
+  border-radius: 15%;
 }
 
 #circuit-history li {
@@ -140,14 +176,16 @@ button:active {
 body {
   font-family: 'Courier New', Courier, monospace;
   margin: 0;
-  padding: 0;
-  background-image: url(file:///Users/ronil/Downloads/honeycomb-34984.svg);
+  /* padding: 0; */
+  background-image: url(src/honeycomb-34984.svg);
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
 }
 
+.card {
+  border-radius: 7%;
+}
 
-#logo:hover {
-  transform: scale(1.1);
+.card-button {
+  border-radius: 15%;
 }
