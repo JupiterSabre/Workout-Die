@@ -1,4 +1,4 @@
-/* hi welcome to our workout die. :3 */
+/* hi welcome to HIIT die. :3 */
 
 
     // EVENT LISTENER HOOKS UP ROLL DIE UP WITH GENERATOR
