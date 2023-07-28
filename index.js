@@ -1,4 +1,4 @@
-/* hi welcome to HIIT die. :3 */
+/* hiiiii welcome to HIIT die. :3 */
 
 
     // EVENT LISTENER HOOKS UP ROLL DIE UP WITH GENERATOR
@@ -38,7 +38,7 @@
     // SET TIMEOUT TO MAKE CURRENT GIF DISPLAYED EXPIRE, CHANGE TIMEOUT TO 2000 MS WHEN DEMO-ING
         setTimeout(() => {
             workoutImg.remove();
-        }, 2000);    
+        }, 6000);    
       }})
 
     

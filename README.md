@@ -13,6 +13,6 @@ Save your workout circuit, keep your favorites, show off to your friends, stay h
 5. Email your circuit by clicking email. This will open your mail client with the circuit listed. Make sure to replace placeholder email to who you are sending.
 
 
-
+<img src="src/DEMOIMG.png" width="50%" height="50%">
 
 
